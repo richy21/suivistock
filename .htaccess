@@ -1,0 +1,16 @@
+RewriteEngine on
+
+RewriteRule ^errorConnexion$ index.php?ok=0
+
+RewriteRule ^ajax/getallproduits$ public/ajax/selectAllProduit.php
+
+
+RewriteRule ^accueil$ accueil.php
+RewriteRule ^gerer/produit$ src/view/produit/indexProduit.php
+RewriteRule ^gerer/produit/succes$ src/view/produit/indexProduit.php?ok=1
+RewriteRule ^gerer/produit/echec$ src/view/produit/indexProduit.php?ok=0
+
+
+RewriteRule ^controller/produit$ src/controller/produitController.php
+RewriteRule ^controller/user$ src/controller/userController.php
+RewriteRule ^controller/user/deconnexion$ src/controller/userController.php?deconnexion
